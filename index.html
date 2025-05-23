@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        *::selection {
+            background-color: black;
+            color: white;
+        }
         #cursor {
             height: 200px;
             width: 200px;
-            background-color: rgba(255, 255, 61, 0.306);
+            background-color: rgba(255, 61, 61, 0.306);
             border-radius: 50%;
             position: fixed;
             transform: translate(-50%, -50%) scale(1);
@@ -22,6 +26,11 @@
     <div id="cursor"></div>
 
     <div id="main">
+
+        <div data-scroll data-scroll-speed="2" class="decoration absolute top-20 left-0 h-[90vh] w-[100vh] rounded-r-full bg-red-300 -z-10">
+
+        </div>
+
         <div class="nav h-10 w-full px-10 py-10 flex justify-between align-middle">
             <h2 class="font-bold font-mono uppercase mr-40 text-[1.4rem]">Syllabus Tracker</h2>
             <ul class="flex gap-16">
@@ -61,6 +70,11 @@
                     <li class="flex gap-2 align-middle text-[1.15rem] font-serif"><div class="check h-5 w-5 border-[1.5px] border-black bg-white rounded-[25%]"></div>Module 7 : Noise</li>
                 </ul>
             </div>
+
+            <div data-scroll data-scroll-speed="2" class="decoration absolute top-[100vh] right-0 h-[90vh] w-[100vh] rounded-l-full bg-red-300 -z-10">
+
+            </div>
+
             <div class="box flex flex-col items-center transition transform duration-500 border border-transparent hover:border-black h-[60vh] w-[65vh] rounded-4xl hover:scale-[1.02]">
                 <img data-scroll data-scroll-speed="3" class="absolute opacity-60 h-40 w-40 bg-contain mt-32" src="transducer-logo-modified.png" alt="">
                 <h2 data-scroll data-scroll-speed="2" class="px-1 py-7 font-bold font-mono tracking-wider text-center text-[1.5rem] uppercase">Instru</h2>
@@ -83,6 +97,11 @@
                     <li class="flex gap-2 align-middle text-[1.15rem] font-serif"><div class="check h-5 w-5 border-[1.5px] border-black bg-white rounded-[25%]"></div>Module 5 : Semiconductors</li>
                 </ul>
             </div>
+
+            <div data-scroll data-scroll-speed="2" class="decoration absolute top-[175vh] left-0 h-[90vh] w-[100vh] rounded-r-full bg-red-300 -z-10">
+
+            </div>
+
             <div class="box flex flex-col items-center transition transform duration-500 border border-transparent hover:border-black h-[70vh] w-[65vh] rounded-4xl hover:scale-[1.02]">
                 <img data-scroll data-scroll-speed="3" class="absolute opacity-60 h-40 w-40 bg-contain mt-32" src="dice-logo.png" alt="">
                 <h2 data-scroll data-scroll-speed="2" class="px-1 py-7 font-bold font-mono tracking-wider text-center text-[1.5rem] uppercase">LARP</h2>
